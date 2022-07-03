@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+// import './App.css';
+import Comments from './Comments';
+import Female from './components/Female'
+import Male from './components/Male'
 
 function App() {
+ 
+  let values = ['Justina', 'Chidinma', 'Rachel', 'Grace']
+  let males = ['Godswill', 'Caeser', 'Emmanuel', 'Nonso']
+  let comment = ['I love React', 'React got me my first car', 'React helped me to relocate to abroad', 'I\'m super grateful to God almighty',]
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    
+    <div className="container">
+          <Female data = {values}/>
+          <Male data= {males}/>
+          <Comments data = {comment}/> 
     </div>
+    </>
   );
 }
 
